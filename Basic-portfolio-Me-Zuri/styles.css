@@ -1,0 +1,259 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+      color: #222222;
+      font-size: 1em;
+      font-family: "Lusitana", serif;
+  }
+  
+  h1 {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    border-bottom: solid black;
+    padding: 1em 2rem;
+    margin: 0 auto;
+    text-align: center;
+    }
+  
+  a:hover, a:visited, a:link, a:active {
+      text-decoration: none;
+      color: #ffffff;
+  }
+  
+  /*--HEADING----------*/
+  
+  .masthead-heading,
+  .masthead-intro,
+  .content-footer {
+     text-align: center;
+  }
+  
+  .masthead {
+      padding: 17em 0;
+      background-image: url('https://unsplash.imgix.net/photo-1428677361686-f9d23be145c9?dpr=1.5&fit=crop&fm=jpg&h=700&q=75&w=1050');
+      background-repeat: no-repeat;
+      background-size: cover;
+      text-align: center;
+      height: 100vh;
+      min-height: 900px;
+  }
+  
+  .masthead-intro {
+      margin-bottom: 0.1em;
+      font-family: 'Raleway', sans-serif;
+      font-size: 2em;
+      color: #ffffff;
+      text-align: center;
+      padding: 1rem 4rem;
+  }
+  
+  .intro_border {
+    color: #fff ;
+    width: 180px;
+    height: 3px;
+    border-style: solid;
+      
+  }
+  
+  .masthead-heading {
+      margin-top: 0.2em;
+      padding-top: 0.1em;
+      font-family: 'Raleway', sans-serif;
+      font-weight: bold;
+      font-size: 6em;
+      color: #ffffff;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      border-bottom: none ;
+    
+  }
+  
+  /*-----Navigation-----------*/
+  
+  
+  nav {
+    text-align: center;
+    top-margin: 4rem;
+  } 
+  
+  nav li{
+    display:inline-block;
+    margin: 1em;
+    border-style: solid;
+    border-width: 0.2em;
+    border-color: white;
+    padding: 0.5em 1.5em;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2em;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  
+  
+  /*-----MAIN CONTENT-----------*/
+  
+  .about-section,
+  .works-section,
+  .contact-section {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 1em;
+      padding-top: 1em;
+      padding-bottom: 5em;
+      overflow: auto; 
+  }
+  
+  .about-section , p,
+  .works-section , p,
+  .contact-section , p {
+      /* Typography Declarations */
+      font-weight: 300;
+      letter-spacing: 0.05em;
+      text-align: left;
+  }
+  
+  .about-section {
+    max-width: 68em;  
+  }
+  
+  .profile-pic {
+    width: 40%;
+    height: auto;
+    float: left;
+    margin-top: 3rem;
+    margin-left: 7rem;
+  }
+  
+  .float-right {
+    width: 40%;
+    display: inline-block;
+    margin-left: 2em;
+    margin-top: 3rem;
+    padding: 2.6rem 0 0 2rem;
+  }
+  
+  /*----------WORKS SECTION ----------*/
+  
+  .works-section{
+    max-width: 68em;
+  }
+  
+  .main-grid {
+     text-align: center;
+  /*   margin: 0 auto; did not bring contents to center why? */
+     margin-left: 50px;
+     margin-right: 50px; 
+     margin-top: 2.5rem;
+  
+  }
+  .grid_images {
+    max-width: 500px;
+    padding: 1rem;
+    text-align: center;
+    width: 450px;
+    height: 323px;
+  
+  }
+  
+  /*--------contact form--------------*/
+  
+  
+  .contact-section {
+    max-width: 38em;
+  }
+  
+  form {
+    max-width: 900px;
+    margin: 10px auto;
+    padding: 10px 20px;
+    
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea,
+  select {
+    background: rgba(255,255,255,0.1);
+    border: none;
+    height: auto;
+    padding: 15px;
+    width: 100%;
+    background-color: #e8eeef;
+    color: #8a97a0;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 30px;
+  }
+  
+  fieldset {
+    margin-bottom: 30px;
+    border: none;
+  }
+  
+  button {
+    padding: 15px;
+    text-align: center;
+    width: 90%;
+    font-family: 'Raleway', sans-serif;
+    text-color: white;
+    text-transform: uppercase;
+    background-color: rgb(0,32,53);
+    color: white;
+    margin-left: 20px; /* better way to center elements buttton? */
+  }
+  
+  /*------footer-------*/
+  
+  .content-footer {
+      background-image: url('https://unsplash.imgix.net/photo-1428677361686-f9d23be145c9?dpr=1.5&fit=crop&fm=jpg&h=700&q=75&w=1050');
+      height: 160px;
+    
+  }
+  
+  .social {
+    padding-bottom: 60px;
+    padding-top: 60px;
+    text-align: center;
+    margin: 0 auto;
+    margin-left: -6em;
+  }
+  .social li {
+      display: inline-block;
+      vertical-align: center;
+  }
+  
+  
+  .social li :hover {
+      color: red;
+      animation-name: icons;
+      animation-duration: 4s;
+      animation-iteration-count: 3
+  }
+  
+  /* The animation code */
+  @keyframes icons {
+      from {padding-bottom: 60px;}
+      to {padding-bottom: 37px;}
+  }
+  
+  
+  .fa  {
+    color: white;
+    margin-left: 50px;
+    text-align: center;
+  } 
+  
+  
+  
+  #footer_para {
+    background-color: black;
+    color: white;
+    position: fixed;
+  }
+  
+  
+  
+
+  
